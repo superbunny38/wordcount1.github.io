@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel = "stylesheet" type=text/css href="style.css">
+                <link href="https://fonts.googleapis.com/css?family=Cinzel|Indie+Flower|Kaushan+Script|Nanum+Brush+Script|Sacramento" rel="stylesheet">
+                <style>
+                    h1{
+                        font-family: 'Indie Flower', cursive;
+                        font-size: 50px;
+                        color:yellowgreen;
+                    }
+                    #ab{
+                        font-family:'Nanum Brush Script', cursive;
+                        font-size: 25px; 
+                        color:cadetblue;
+                    }
+                    p{
+                        font-family: 'Cinzel', serif;
+                        color:darkolivegreen;
+                    }
+                    .para{
+                        background-color: pink;
+                    }
+                    .main{
+                        background-color: lightblue;
+                    }
+                </style>
+                <title>Home</title>
+                </head>
+            
+<h1 class="main">Welcome! To this word-counting page!</h1>
+
+<a href="{%url 'about'%}"><div id="ab">SEE WHAT THIS IS ABOUT</div></a>
+<p class="para">
+    <br><br>
+write your text here!
+</p>
+<form action="{%url 'result'%}">
+    <textarea cols="40" rows="10" name = "fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!">
+</form>
+
+<img src="SymbolMark.jpg">
+</html>
